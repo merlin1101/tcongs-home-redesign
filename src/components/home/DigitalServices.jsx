@@ -1,7 +1,9 @@
+import digitalImg from "../../assets/digital.jpg"
 
 const DigitalServices = () => {
     return (
         <>
+            {/* <img src={ digitalImg } alt="Digital Image" /> */}
             <div className="content">
                 <h2>Grow Your Digital Business</h2>
                 <div className="digital-section">

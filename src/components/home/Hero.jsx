@@ -1,8 +1,9 @@
-import React from 'react'
+import cosmicCloudImg from "../../assets/cosmic-cloud-with-neon.png"
 
 const Hero = () => {
   return (
     <>
+      <img src={ cosmicCloudImg } alt="Cosmic Cloud Image" />
       <div className="content">
         <h1 className="title">
           <span className='build'>Build.</span>

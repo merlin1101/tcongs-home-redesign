@@ -8,6 +8,10 @@
 body {
   background: radial-gradient(circle at 80% 0%, #00081a 0%, transparent 0%), radial-gradient(circle at 80% 70%, #0a001a 0%, transparent 80%), #06001a;
 }
+main {
+  width: 100%;
+  padding: 0 20px;
+}
 main,
 header .content,
 footer > div {
@@ -71,6 +75,7 @@ header button {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 9;
   }
   header .content {
     display: flex;
@@ -211,13 +216,35 @@ footer > div {
 .hero-buttons button {
   font-weight: 600;
 }
+.hero-buttons {
+  margin-top: 45px;
+}
 
 @media (min-width: 992px) {
   #hero {
-    min-height: 360px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  #hero {
+    position: relative;
+  }
+  #hero img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37%;
+    opacity: 1;
+  }
+  #hero .content {
+    text-align: left;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  #hero img {
+    display: none;
   }
 }
 
@@ -247,6 +274,7 @@ footer > div {
 
 /* Digital Business */
 #digital-services {
+  position: relative;
   min-height: 310px;
   display: flex;
   align-items: center;
